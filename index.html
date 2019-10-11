@@ -1,31 +1,56 @@
 <html>
     <body>
-        <h1>Welcome</h1>
-        <div>
+        <h1 class="large-font">Welcome</h1>
+        <div> 
             <a href="AboutMe.html"/>About Me:</a>
         </div>
-       <br>
+       <br> 
     
         <form>
             First name:<br>
-            <input type="text" name="firstname"><br>
+            <input type="text" class="pink-background" name="firstname"><br>
             Last name:<br>
-            <input type="text" name="lastname"><br>
+            <input type="text" class="pink-background" name="lastname"><br>
             Age: <br>
-            <input type="number" name="age"><br>
+            <input type="number" class="pink-background"  name="age"><br>
             <br>
             <input type="radio" name="gender" value="male"> Male<br>
             <input type="radio" name="gender" value="female"> Female<br>
+<br> <br>
+  
+  <input type="radio" name="gender" id="male" value="male">
+  <label class="red-form-title" for="male">Male</label>   <br>   
+ 
+  
+  <input type="radio" name="gender" id="female" value="female">
+  <label class="red-form-title" for="female">Female</label><br> 
         </form>
-
-
-        <h3>
+        <h3 id="picTitle">
             Lake Blanche
         </h3>
         <img src="/LakeBlanche.JPG" height="400">
-
-        
-
-
     </body>
+    <style>
+        h1{
+            color: blue;
+        }
+        #picTitle{
+            color: green;
+        }
+        .red-form-title{
+            color:red;
+        }
+        .pink-background{
+            background: lightpink;
+        }
+        .large-font{
+            font-size: 50px;
+        }
+
+    </style>
+
+
+
+
+
 </html>
